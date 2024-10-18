@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.categories button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.categories button:hover {
+    background-color: #555;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.video-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.video-card:hover {
+    transform: translateY(-10px);
+}
+.video-card video {
+    width: 100%;
+    height: auto;
+}
+.video-card h3 {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+.video-card p {
+    padding: 0 15px 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+    }
+    .categories button {
+        margin: 10px 0;
+    }
+}

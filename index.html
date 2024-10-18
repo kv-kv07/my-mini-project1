@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Editkaro.in - Video Editing Portfolio</h1>
+</header>
+
+<div class="container">
+    <div class="categories">
+        <button onclick="filterVideos('all')">All</button>
+        <button onclick="filterVideos('short-form')">Short-Form Videos</button>
+        <button onclick="filterVideos('long-form')">Long-Form Videos</button>
+        <button onclick="filterVideos('gaming')">Gaming Videos</button>
+        <button onclick="filterVideos('football')">Football Edits</button>
+        <button onclick="filterVideos('ecommerce')">eCommerce Ads</button>
+        <button onclick="filterVideos('documentary')">Documentary Style</button>
+        <button onclick="filterVideos('color-grading')">Color Grading</button>
+        <button onclick="filterVideos('anime')">Anime Videos</button>
+        <button onclick="filterVideos('ads')">Ads</button>
+    </div>
+
+    <div id="video-grid" class="video-grid">
+        <!-- Video Cards -->
+        <div class="video-card" data-category="short-form">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zBjJUV-lzHo?si=Fmx9cLq230pcroGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Short-Form Video 1</h3>
+            <p>A quick social media edit featuring motion graphics.</p>
+        </div>
+        <div class="video-card" data-category="long-form">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f63TV4g-iN0?si=MGB-Yg0rrk_9Ce8W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Long-Form Video 1</h3>
+            <p>In-depth long video for YouTube channel with interviews.</p>
+        </div>
+        <div class="video-card" data-category="gaming">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BPBQMtkeex8?si=J7ldyBgTHptiBWZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Gaming Video 1</h3>
+            <p>Action-packed highlights from a gaming stream.</p>
+        </div>
+        <div class="video-card" data-category="football">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sFqxMJrPm_Y?si=W0z5kaBCrGqMB13U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Football Edit 1</h3>
+            <p>Football match highlights with professional editing.</p>
+        </div>
+        <div class="video-card" data-category="ecommerce">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QMVKf8FzALk?si=Gmf1MX2LcmBuJCKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>eCommerce Ad 1</h3>
+            <p>A vibrant, eye-catching ad for an online shop.</p>
+        </div>
+        <div class="video-card" data-category="documentary">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ti6Ochpgxak?si=PxRuMKwRnIsxcAea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Documentary Style Video 1</h3>
+            <p>A documentary video with cinematic storytelling.</p>
+        </div>
+        <div class="video-card" data-category="color-grading">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/K0Q5nfo2eeU?si=PqvjnCmvIeHAUvZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Color Grading Video 1</h3>
+            <p>Beautiful color grading for a promotional video.</p>
+        </div>
+        <div class="video-card" data-category="anime">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PTtkw0bTouI?si=e9Rg0735AN-Rk8bi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Anime Edit 1</h3>
+            <p>Exciting anime-style edit with transitions and effects.</p>
+        </div>
+        <div class="video-card" data-category="ads">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oio3JCUhl5Q?si=f7ZCo1UMR_3Ajt0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Ad 1</h3>
+            <p>Professional ad showcasing a brand's new product line.</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
